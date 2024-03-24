@@ -45,18 +45,18 @@ namespace DAL.Data
                 ur.HasKey(b => new { b.UserId, b.RoleId });
             });
 
-            //modelBuilder.Entity<CategoryEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<ProductEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<BasketEntity>().HasQueryFilter(p => !p.Product.IsDelete);
-            //modelBuilder.Entity<ProductImageEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<UserEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<OrderStatusEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<OrderItemEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<OrderEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<SaleEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<Sales_ProductEntity>().HasQueryFilter(p => DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc) < p.Sale.ExpireTime);
-            //modelBuilder.Entity<RoleEntity>().HasQueryFilter(p => !p.IsDelete);
-            //modelBuilder.Entity<UserRoleEntity>().HasQueryFilter(p => !p.Role.IsDelete);
+            // modelBuilder.Entity<CategoryEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<ProductEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<BasketEntity>().HasQueryFilter(p => !p.Product.IsDelete);
+            // modelBuilder.Entity<ProductImageEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<UserEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<OrderStatusEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<OrderItemEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<OrderEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<SaleEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<Sales_ProductEntity>().HasQueryFilter(p => DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc) < p.Sale.ExpireTime);
+            // modelBuilder.Entity<RoleEntity>().HasQueryFilter(p => !p.IsDelete);
+            // modelBuilder.Entity<UserRoleEntity>().HasQueryFilter(p => !p.Role.IsDelete);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace BAL.Utilities
         public static string UploadImage(byte[] imageBytes)
         {
             string base64 = Convert.ToBase64String(imageBytes);
-            string server = "https://solido.tk";
+            string server = "https://solido.tk"; // баг тут, сервер не існує
             UploadDTO upload = new UploadDTO();
             upload.Photo = base64;
             string json = JsonConvert.SerializeObject(upload);
@@ -35,7 +35,7 @@ namespace BAL.Utilities
             }
             try
             {
-                var response = request.GetResponse();
+                var response = request.GetResponse(); // баг тут, сервер не дає відповіді на запит
                 using (var stream = new StreamReader(response.GetResponseStream()))
                 {
                     string data = stream.ReadToEnd();
